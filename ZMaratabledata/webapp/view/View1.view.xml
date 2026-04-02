@@ -1,0 +1,14 @@
+<mvc:View controllerName="com.appZMaratabledata.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:smartTable="sap.ui.comp.smarttable" xmlns:sfb="sap.ui.comp.smartfilterbar">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<sfb:SmartFilterBar id="smartFilterBar" entitySet="Zcdsmaratable" enableBasicSearch="true" 
+					persistencyKey="UniqueAndStablePersistencyKey"></sfb:SmartFilterBar>
+				<smartTable:SmartTable id="smartTable" entitySet="Zcdsmaratable" smartFilterId="smartFilterBar" tableType="Table"
+					useTablePersonalisation="true"  showRowCount="true">
+				</smartTable:SmartTable>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
